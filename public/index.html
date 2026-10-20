@@ -128,6 +128,12 @@ a { color: var(--accent); text-underline-offset: 3px; }
 .t-ink { background: var(--ink); color: var(--on-ink); }
 .topics h3 { font-size: 23px; margin-bottom: 4px; }
 .topics p { color: var(--muted); font-size: 16px; }
+.topics h3 a.read { color: inherit; text-decoration: none; display: inline-flex; flex-direction: column; gap: 2px; }
+.topics h3 a.read:hover, .topics h3 a.read:focus-visible { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-color: var(--accent); }
+.topics .pg { font-family: var(--font-body, inherit); font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
+.topics .pg::after { content: " \2192"; }
+.topics li.cta { grid-template-columns: minmax(0, 1fr); gap: 14px; justify-items: start; margin-top: 8px; padding: 22px 24px; border: 2px dashed var(--accent); border-radius: 18px; }
+.topics li.cta p { margin: 0; color: var(--fg); font-size: 17px; }
 
 /* princípios */
 .how { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-bottom: 64px; }
@@ -252,27 +258,31 @@ footer { border-top: 1px solid var(--line); padding-top: 22px; display: flex; fl
     <ul class="topics">
       <li>
         <span class="tag t-berry">Trabalhista</span>
-        <div><h3>Fim da escala 6×1</h3><p>O que muda para as clínicas a partir de 16/12/2026.</p></div>
+        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=3" target="_blank" rel="noopener">Fim da escala 6×1<span class="pg">Ler na íntegra, p. 3</span></a></h3><p>O que muda para as clínicas a partir de 16/12/2026.</p></div>
       </li>
       <li>
         <span class="tag t-teal">Regulação CFO</span>
-        <div><h3>Sedação odontológica</h3><p>A Resolução CFO 295/2026 e a suspensão judicial parcial.</p></div>
+        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=4" target="_blank" rel="noopener">Sedação odontológica<span class="pg">Ler na íntegra, p. 4</span></a></h3><p>A Resolução CFO 295/2026 e a suspensão judicial parcial.</p></div>
       </li>
       <li>
         <span class="tag t-teal">Regulação CFO</span>
-        <div><h3>PMMA</h3><p>A proibição do uso exclusivamente estético, na Resolução CFO 297/2026.</p></div>
+        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=6" target="_blank" rel="noopener">PMMA<span class="pg">Ler na íntegra, p. 6</span></a></h3><p>A proibição do uso exclusivamente estético, na Resolução CFO 297/2026.</p></div>
       </li>
       <li>
         <span class="tag t-sun">Tributário</span>
-        <div><h3>Reforma tributária</h3><p>A escolha do regime de IBS e CBS, com prazo em 30/10.</p></div>
+        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=9" target="_blank" rel="noopener">Reforma tributária<span class="pg">Ler na íntegra, p. 9</span></a></h3><p>A escolha do regime de IBS e CBS, com prazo em 30/10.</p></div>
       </li>
       <li>
         <span class="tag t-leaf">Ciência</span>
-        <div><h3>Peri-implantite</h3><p>O que as revisões recentes dizem sobre antibióticos sistêmicos.</p></div>
+        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=7" target="_blank" rel="noopener">Peri-implantite<span class="pg">Ler na íntegra, p. 7</span></a></h3><p>O que as revisões recentes dizem sobre antibióticos sistêmicos.</p></div>
       </li>
       <li>
         <span class="tag t-ink">Indústria</span>
-        <div><h3>Encarte Radar GOV Indústria</h3><p>As consultas públicas da Anvisa sobre processamento de dispositivos médicos.</p></div>
+        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=14" target="_blank" rel="noopener">Encarte Radar GOV Indústria<span class="pg">Ler na íntegra, p. 14</span></a></h3><p>As consultas públicas da Anvisa sobre processamento de dispositivos médicos.</p></div>
+      </li>
+      <li class="cta">
+        <p><strong>Tudo isso e muito mais, direto no seu e-mail.</strong> A edição completa chega a cada quinze dias, sem custo.</p>
+        <a class="btn" data-form href="#inscricao">Cadastre-se</a>
       </li>
     </ul>
   </section>
