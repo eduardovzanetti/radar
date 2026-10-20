@@ -128,10 +128,10 @@ a { color: var(--accent); text-underline-offset: 3px; }
 .t-ink { background: var(--ink); color: var(--on-ink); }
 .topics h3 { font-size: 23px; margin-bottom: 4px; }
 .topics p { color: var(--muted); font-size: 16px; }
-.topics h3 a.read { color: inherit; text-decoration: none; display: inline-flex; flex-direction: column; gap: 2px; }
-.topics h3 a.read:hover, .topics h3 a.read:focus-visible { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-color: var(--accent); }
-.topics .pg { font-family: var(--font-body, inherit); font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
-.topics .pg::after { content: " \2192"; }
+.topics details.more { margin-top: 8px; }
+.topics details.more summary { cursor: pointer; font-size: 14px; font-weight: 700; color: var(--accent); width: fit-content; }
+.topics details.more summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.topics details.more p { margin-top: 10px; color: var(--fg); font-size: 16px; max-width: 40em; }
 .topics li.cta { grid-template-columns: minmax(0, 1fr); gap: 14px; justify-items: start; margin-top: 8px; padding: 22px 24px; border: 2px dashed var(--accent); border-radius: 18px; }
 .topics li.cta p { margin: 0; color: var(--fg); font-size: 17px; }
 
@@ -258,27 +258,27 @@ footer { border-top: 1px solid var(--line); padding-top: 22px; display: flex; fl
     <ul class="topics">
       <li>
         <span class="tag t-berry">Trabalhista</span>
-        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=3" target="_blank" rel="noopener">Fim da escala 6×1<span class="pg">Ler na íntegra, p. 3</span></a></h3><p>O que muda para as clínicas a partir de 16/12/2026.</p></div>
+        <div><h3>Fim da escala 6×1</h3><p>O que muda para as clínicas a partir de 16/12/2026.</p><details class="more"><summary>Ler resumo</summary><p>A Emenda Constitucional nº 141, promulgada em 16/10/2026, reduz a jornada semanal máxima em duas etapas: de 44 para 42 horas em 16/12/2026 e para 40 horas em 16/12/2027, e garante dois dias de repouso semanal. A redução não pode diminuir salários, inclusive pisos. Clínicas que abrem aos sábados terão de reavaliar a cobertura de recepção, auxiliares e esterilização. <b>Na edição completa:</b> o que muda em cada etapa, os limites dos regimes compensatórios e o que levantar agora.</p></details></div>
       </li>
       <li>
         <span class="tag t-teal">Regulação CFO</span>
-        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=4" target="_blank" rel="noopener">Sedação odontológica<span class="pg">Ler na íntegra, p. 4</span></a></h3><p>A Resolução CFO 295/2026 e a suspensão judicial parcial.</p></div>
+        <div><h3>Sedação odontológica</h3><p>A Resolução CFO 295/2026 e a suspensão judicial parcial.</p><details class="more"><summary>Ler resumo</summary><p>A Resolução CFO 295/2026 criou a habilitação básica (mínimo de 200 h) e a avançada (mínimo de 500 h) e prevê o reconhecimento por experiência, com requerimento ao CRO até 27/01/2027 (data calculada). Em 06/08/2026, a Justiça Federal suspendeu parcialmente os dispositivos sobre sedação profunda por cirurgiões-dentistas; segundo o CFO, as regras de sedação mínima e moderada foram preservadas. <b>Na edição completa:</b> os requisitos para o reconhecimento por experiência, o que está suspenso e o que conferir antes de investir.</p></details></div>
       </li>
       <li>
         <span class="tag t-teal">Regulação CFO</span>
-        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=6" target="_blank" rel="noopener">PMMA<span class="pg">Ler na íntegra, p. 6</span></a></h3><p>A proibição do uso exclusivamente estético, na Resolução CFO 297/2026.</p></div>
+        <div><h3>PMMA</h3><p>A proibição do uso exclusivamente estético, na Resolução CFO 297/2026.</p><details class="more"><summary>Ler resumo</summary><p>A Resolução CFO 297/2026 proíbe o PMMA como preenchedor injetável em procedimentos exclusivamente estéticos. O uso segue limitado às indicações reparadoras admitidas pela Anvisa, com consentimento esclarecido e rastreabilidade do produto. O descumprimento pode configurar infração ético-disciplinar. <b>Na edição completa:</b> o que revisar na clínica e o andamento do PDL 177/2026, que questiona resoluções sobre Cirurgia Estética Orofacial.</p></details></div>
       </li>
       <li>
         <span class="tag t-sun">Tributário</span>
-        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=9" target="_blank" rel="noopener">Reforma tributária<span class="pg">Ler na íntegra, p. 9</span></a></h3><p>A escolha do regime de IBS e CBS, com prazo em 30/10.</p></div>
+        <div><h3>Reforma tributária</h3><p>A escolha do regime de IBS e CBS, com prazo em 30/10.</p><details class="more"><summary>Ler resumo</summary><p>Clínicas do Simples que queiram apurar IBS e CBS pelo regime regular, fora do DAS, têm até 30/10/2026, com efeitos no primeiro semestre de 2027. A NFS-e nacional passa a ser obrigatória em 01/11/2026 para ME e EPP do Simples prestadoras de serviços. A LC 214/2025 prevê redução de 60% nas alíquotas de serviços odontológicos enquadrados. <b>Na edição completa:</b> os dois prazos que não devem ser confundidos, o que a redução de 60% significa na prática, o split payment e cinco perguntas para levar ao contador.</p></details></div>
       </li>
       <li>
         <span class="tag t-leaf">Ciência</span>
-        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=7" target="_blank" rel="noopener">Peri-implantite<span class="pg">Ler na íntegra, p. 7</span></a></h3><p>O que as revisões recentes dizem sobre antibióticos sistêmicos.</p></div>
+        <div><h3>Peri-implantite</h3><p>O que as revisões recentes dizem sobre antibióticos sistêmicos.</p><details class="more"><summary>Ler resumo</summary><p>Duas revisões recentes reacenderam o debate. A de Isola e colaboradores (2026) associou antibióticos sistêmicos a menos sangramento e menor profundidade de sondagem aos 12 meses, sem melhora consistente do nível ósseo. A de Antonoglou e colaboradores (2025) sugeriu benefício de curto prazo e nenhuma vantagem substancial a partir de três anos. A diretriz S3 da EFP (2023) segue contra o uso rotineiro. <b>Na edição completa:</b> o mapa da evidência, a aplicação clínica e as referências.</p></details></div>
       </li>
       <li>
         <span class="tag t-ink">Indústria</span>
-        <div><h3><a class="read" href="/radar-odonto-edicao-0.pdf#page=14" target="_blank" rel="noopener">Encarte Radar GOV Indústria<span class="pg">Ler na íntegra, p. 14</span></a></h3><p>As consultas públicas da Anvisa sobre processamento de dispositivos médicos.</p></div>
+        <div><h3>Encarte Radar GOV Indústria</h3><p>As consultas públicas da Anvisa sobre processamento de dispositivos médicos.</p><details class="more"><summary>Ler resumo</summary><p>Em setembro de 2026, a Anvisa abriu as consultas públicas nº 1.420 a 1.423/2026 sobre processamento e reúso de dispositivos médicos, com contribuições até 28/01/2027. Os textos estão em consulta e não são obrigações aprovadas, mas podem afetar fabricantes, importadores, empresas processadoras e consultórios odontológicos. <b>Na edição completa:</b> os pontos em discussão, a transição proposta e o que fabricantes e importadores devem mapear.</p></details></div>
       </li>
       <li class="cta">
         <p><strong>Tudo isso e muito mais, direto no seu e-mail.</strong> A edição completa chega a cada quinze dias, sem custo.</p>
